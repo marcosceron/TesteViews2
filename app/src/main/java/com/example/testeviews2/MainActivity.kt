@@ -12,11 +12,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        // Exercício 2
         val botao: Button = findViewById(R.id.botao)
         botao.setOnClickListener {
             Toast.makeText(this, "Botão clicado!", Toast.LENGTH_SHORT).show()
         }
 
+        // Exercício 3
         val inputText: EditText = findViewById<EditText>(R.id.input_text)
         val botaoMostrar: Button = findViewById<Button>(R.id.mostrar_texto)
         botaoMostrar.setOnClickListener {
